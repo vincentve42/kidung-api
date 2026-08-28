@@ -11,7 +11,7 @@ class KidungController extends Controller
         }
         else
         {
-            KidungService::searchByName($params);
+            echo KidungService::searchByName($params, $database);
         }
     }
 }
