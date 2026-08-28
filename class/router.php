@@ -1,6 +1,7 @@
 <?php 
 
 class Router{
+    static $db;
     static function Get($url,$slug, $params)
     {
         if(str_starts_with($url, $slug))
